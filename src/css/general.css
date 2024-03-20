@@ -1,1 +1,64 @@
 /* Color variables */
+:root {
+  --p-text: rgba(12, 12, 12, 0.7); /*Колір тексту в більшості параграфів*/
+  --h-text: #0c0c0c; /*Колір більшості заголовків*/
+  --white-text: #fbfbfb; /*Колір тексту на темному фоні та фону сторінки*/
+  --interactive: #3350e9; /*Колір більшості інтекрактивних елементів*/
+  --interactive-hover: #1f3cd4; /*Колір активного стану інтерактивних елементів*/
+}
+/* 
+Формат використання:
+color: var(--white-text);
+*/
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  color: var(--p-text);
+  background-color: var(--white-text);
+}
+
+/* General mobile styles */
+.container {
+  max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    min-width: 320px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+}
+
+/* General tablet styles */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+}
+
+/* General desktop styles */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-right: 65px;
+    padding-left: 65px;
+  }
+
+  .section {
+    padding: 100px 0;
+  }
+}
