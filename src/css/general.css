@@ -1,10 +1,12 @@
 /* Color variables */
 :root {
   --p-text: rgba(12, 12, 12, 0.7); /*Колір тексту в більшості параграфів*/
+  --light-text: rgba(251, 251, 251, 0.5);
   --h-text: #0c0c0c; /*Колір більшості заголовків*/
   --white-text: #fbfbfb; /*Колір тексту на темному фоні та фону сторінки*/
   --interactive: #3350e9; /*Колір більшості інтекрактивних елементів*/
   --interactive-hover: #1f3cd4; /*Колір активного стану інтерактивних елементів*/
+  --gray: #f3f3f3;
 }
 /* 
 Формат використання:
@@ -30,6 +32,11 @@ body {
   .container {
     min-width: 320px;
   }
+  .title__block {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
 }
 
 .section {
@@ -48,6 +55,11 @@ body {
   .section {
     padding: 80px 0;
   }
+  .title__block {
+    font-size: 48px;
+    line-height: 0.91667;
+    letter-spacing: -0.02em;
+  }
 }
 
 /* General desktop styles */
@@ -61,4 +73,12 @@ body {
   .section {
     padding: 100px 0;
   }
+}
+
+.title__block {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91667;
+  letter-spacing: -0.02em;
+  color: var(--h-text);
 }
