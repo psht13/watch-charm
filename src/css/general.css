@@ -2,11 +2,13 @@
 :root {
   --p-text: rgba(12, 12, 12, 0.7); /*Колір тексту в більшості параграфів*/
   --light-text: rgba(251, 251, 251, 0.5);
+  --bg-color: rgba(12, 12, 12, 0.92); /* Колір фонів*/
   --h-text: #0c0c0c; /*Колір більшості заголовків*/
   --white-text: #fbfbfb; /*Колір тексту на темному фоні та фону сторінки*/
   --interactive: #3350e9; /*Колір більшості інтекрактивних елементів*/
   --interactive-hover: #1f3cd4; /*Колір активного стану інтерактивних елементів*/
   --gray: #f3f3f3;
+  --reviews: rgba(12, 12, 12, 0.4) /*для відгуків*/
 }
 /* 
 Формат використання:
@@ -40,7 +42,7 @@ body {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 /* General tablet styles */
@@ -53,7 +55,7 @@ body {
   }
 
   .section {
-    padding: 80px 0;
+    padding: 40px 0;
   }
   .title__block {
     font-size: 48px;
@@ -71,7 +73,7 @@ body {
   }
 
   .section {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 
