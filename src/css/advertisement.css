@@ -1,0 +1,118 @@
+.section-advertisement {
+  width: 335px;
+  border-radius: 30px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #0c0c0c;
+  background-image: url(../img/advertisement.img/mobile.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 28px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-advertisement {
+    background-image: url(../img/advertisement.img/mobile@2x.jpg);
+  }
+}
+
+.container-advertisement-title {
+  min-width: 279px;
+  margin-bottom: 28px;
+}
+
+.advertisement-title {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.title-part {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-btn {
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  background: none;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.advertisement-btn:hover,
+.advertisement-btn:focus {
+  background-color: #fbfbfb;
+  color: #0c0c0c;
+}
+/* ======    tablet    ======== */
+
+@media screen and (min-width: 768px) {
+  .section-advertisement {
+    width: 704px;
+    padding: 80px 64px;
+    background-image: url(../img/advertisement.img/tablet.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-advertisement {
+    background-image: url(../img/advertisement.img/tablet@2x.jpg);
+  }
+}
+
+.container-advertisement-title {
+  min-width: 576px;
+  margin-bottom: 32px;
+}
+
+.advertisement-title {
+  font-size: 48px;
+  line-height: 0.92;
+}
+
+/* ======    desktop    ====== */
+@media screen and (min-width: 1158px) {
+  .section-advertisement {
+    display: flex;
+    width: 1150px;
+    padding: 83px 80px;
+
+    background-image: url(../img/advertisement.img/desktop.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .section-advertisement {
+    background-image: url(../img/advertisement.img/desktop@2x.jpg);
+  }
+}
+
+.container-advertisement-title {
+  min-width: 690px;
+  padding-top: 83px;
+  padding-bottom: 83px;
+  margin-right: 140px;
+}
+
+.advertisement-btn {
+  padding: 15px 43px;
+}
