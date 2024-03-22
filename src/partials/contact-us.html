@@ -1,65 +1,67 @@
 <section class="section">
   <div class="container">
     <h2 class="title__block">Contact Us</h2>
-    <form class="contact-form">
-      <p class="contact-form-text">
-        Please use the form below to contact us. Enter your name, email, phone,
-        and message and we'll get back to you shortly.
-      </p>
-      <div class="contact-form-input-container">
-        <input
-          type="text"
-          class="contact-form-input"
-          required
-          name="user-name"
-          pattern="[a-zA-Zа-яА-ЯЇїєЄ'іІ]+"
-          placeholder="Name"
-        /><input
-          type="email"
-          class="contact-form-input"
-          required
-          name="user-email"
-          placeholder="Email"
-        /><input
-          type="tel"
-          class="contact-form-input"
-          required
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-          title="xxx-xxx-xx-xx"
-          name="user-phone-number"
-          placeholder="+380"
-        /><textarea
-          name="user-comment"
-          class="contact-form-textarea"
-          required
-          placeholder="Comment"
-        ></textarea>
-      </div>
-      <button class="contact-form-btn" type="submit">Send</button>
-    </form>
-    <picture
-      ><source
-        media="(min-width: 1280px)"
-        srcset="
-          ./img/contact-us/desktop.jpg    1x,
-          ./img/contact-us/desktop@2x.jpg 2x
-        "
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./img/contact-us/tablet.jpg    1x,
-          ./img/contact-us/tablet@2x.jpg 2x
-        "
-      />
-      <source
-        media="(max-width: 768px)"
-        srcset="
-          ./img/contact-us/mobile.jpg    1x,
-          ./img/contact-us/mobile@2x.jpg 2x
-        "
-      />
-      <img src="/src/img/contact-us/mobile.jpg" alt="watch photo" />
-    </picture>
+    <div class="contact-us-content-container">
+      <form class="contact-form">
+        <p class="contact-form-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <div class="contact-form-input-container">
+          <input
+            type="text"
+            class="contact-form-input"
+            required
+            name="user-name"
+            pattern="[a-zA-Zа-яА-ЯЇїєЄ'іІ]+"
+            placeholder="Name"
+          /><input
+            type="email"
+            class="contact-form-input"
+            required
+            name="user-email"
+            placeholder="Email"
+          /><input
+            type="tel"
+            class="contact-form-input"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            name="user-phone-number"
+            placeholder="+380"
+          /><textarea
+            name="user-comment"
+            class="contact-form-textarea"
+            required
+            placeholder="Comment"
+          ></textarea>
+        </div>
+        <button class="contact-form-btn" type="submit">Send</button>
+      </form>
+      <picture class="contact-picture"
+        ><source
+          media="(min-width: 1280px)"
+          srcset="
+            ./img/contact-us/desktop.jpg    1x,
+            ./img/contact-us/desktop@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/contact-us/tablet.jpg    1x,
+            ./img/contact-us/tablet@2x.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 768px)"
+          srcset="
+            ./img/contact-us/mobile.jpg    1x,
+            ./img/contact-us/mobile@2x.jpg 2x
+          "
+        />
+        <img src="/src/img/contact-us/mobile.jpg" alt="watch photo" />
+      </picture>
+    </div>
   </div>
 </section>
