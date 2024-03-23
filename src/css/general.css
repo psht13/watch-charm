@@ -86,3 +86,19 @@ body {
   letter-spacing: -0.02em;
   color: var(--h-text);
 }
+
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--interactive);
+  transform: translateX(-50%);
+}

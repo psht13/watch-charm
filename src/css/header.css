@@ -79,22 +79,6 @@
     line-height: 1.29;
   }
 
-  .current {
-    position: relative;
-  }
-
-  .current::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    border-radius: 100%;
-    width: 8px;
-    height: 8px;
-    background-color: var(--interactive);
-    transform: translateX(-50%);
-  }
-
   .header-contacts-list {
     display: flex;
     gap: 10px;
