@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 // sale
 var swiper = new Swiper('.mySwiper', {
   spaceBetween: 10,
