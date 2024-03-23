@@ -1,118 +1,137 @@
-.section-advertisement {
-  width: 335px;
+.advertisement-container {
+  background-image: linear-gradient(
+      rgba(12, 12, 12, 0.8),
+      rgba(12, 12, 12, 0.8)
+    ),
+    url(../img/advertisement.img/mobile.jpg);
   border-radius: 30px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: #0c0c0c;
-  background-image: url(../img/advertisement.img/mobile.jpg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  max-width: 335px;
+  height: 100%;
   padding: 60px 28px;
-  margin-right: auto;
-  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .section-advertisement {
-    background-image: url(../img/advertisement.img/mobile@2x.jpg);
+@media screen and (max-width: 779px) and (min-resolution: 192dpi) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/mobile@2x.jpg);
   }
 }
-
 .container-advertisement-title {
-  min-width: 279px;
-  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
-.advertisement-title {
-  font-family: 'Gilroy', sans-serif;
+.advertisement-text {
+  max-width: 279px;
   font-weight: 600;
   font-size: 32px;
-
   line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
 }
 
-.title-part {
+.text-part {
   color: rgba(251, 251, 251, 0.5);
 }
 
-.advertisement-btn {
-  border: 1px solid rgba(251, 251, 251, 0.15);
-  border-radius: 16px;
+.advertisement-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   height: 48px;
-  background: none;
-  font-family: 'Gilroy', sans-serif;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  background-color: transparent;
   font-weight: 500;
   font-size: 14px;
-
   line-height: 1.29;
-  text-align: center;
   color: #fbfbfb;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
-.advertisement-btn:hover,
-.advertisement-btn:focus {
-  background-color: #fbfbfb;
+.advertisement-link:hover {
   color: #0c0c0c;
+  background-color: #fbfbfb;
 }
-/* ======    tablet    ======== */
+/* =========       mobile      ============= */
 
-@media screen and (min-width: 768px) {
-  .section-advertisement {
-    width: 704px;
+/* =========        tablet.     =========== */
+
+@media screen and (min-width: 780px) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/tablet.jpg);
+    max-width: 704px;
+    height: 100%px;
     padding: 80px 64px;
-    background-image: url(../img/advertisement.img/tablet.jpg);
   }
 }
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .section-advertisement {
-    background-image: url(../img/advertisement.img/tablet@2x.jpg);
+
+@media screen and (max-width: 1149px) and (min-resolution: 192dpi) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/tablet@2x.jpg);
   }
 }
 
 .container-advertisement-title {
-  min-width: 576px;
-  margin-bottom: 32px;
+  gap: 32px;
 }
 
-.advertisement-title {
+.advertisement-text {
+  max-width: 576px;
   font-size: 48px;
   line-height: 0.92;
 }
 
-/* ======    desktop    ====== */
-@media screen and (min-width: 1158px) {
-  .section-advertisement {
-    display: flex;
-    width: 1150px;
-    padding: 83px 80px;
+/* ========     tablet      ============= */
 
-    background-image: url(../img/advertisement.img/desktop.jpg);
+/* ========        desktop      ========= */
+@media screen and (min-width: 1150px) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/desktop.jpg);
+
+    height: 298px;
+    max-width: 1150px;
+    padding: 80px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .section-advertisement {
-    background-image: url(../img/advertisement.img/desktop@2x.jpg);
+@media screen and (max-width: 1280px) and (min-resolution: 192dpi) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/desktop@2x.jpg);
   }
 }
 
 .container-advertisement-title {
-  min-width: 690px;
-  padding-top: 83px;
-  padding-bottom: 83px;
-  margin-right: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.advertisement-btn {
-  padding: 15px 43px;
+.advertisement-text {
+  max-width: 690px;
 }
+
+/* =========      desktop      ======== */
