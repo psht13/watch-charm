@@ -5,6 +5,8 @@ var swiper = new Swiper('.mySwiper', {
   freeMode: true,
   watchSlidesProgress: true,
   direction: 'vertical',
+  grabCursor: true,
+  mousewheel: true,
   breakpoints: {
     // when window width is >= 320px
     320: {
