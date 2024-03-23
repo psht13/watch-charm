@@ -51,7 +51,7 @@
     background-color: #1F3CD4;
  }
  .image-container{
-    max-width: 335px;
+    max-width: 705px;
         border-radius: 30px;
         overflow: hidden;
 
@@ -76,10 +76,7 @@
         .about-us-list-item:last-child {
             margin-bottom: 60px;
         }
-         .image-container {
-         max-width: 705px;
-         
-        }
+        
      @media only screen and (min-width:1280px){
         .about-us.container{
             display:flex;
