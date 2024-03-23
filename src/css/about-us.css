@@ -45,6 +45,7 @@
    text-align: center;
    color: #fbfbfb;
    background-color: #3350E9;
+   transition: background-color 400ms ease-in-out;
  }
  .about-us-link:hover ,
  .about-us-link:focus{
