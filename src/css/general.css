@@ -44,7 +44,7 @@ body {
 }
 
 .section {
-  padding: 30px 0;
+  padding-bottom: 60px;
 }
 
 /* General tablet styles */
@@ -57,7 +57,7 @@ body {
   }
 
   .section {
-    padding: 40px 0;
+    padding-bottom: 80px;
   }
   .title__block {
     font-size: 48px;
@@ -75,7 +75,7 @@ body {
   }
 
   .section {
-    padding: 50px 0;
+    padding-bottom: 100px;
   }
 }
 

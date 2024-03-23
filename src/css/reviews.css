@@ -10,7 +10,7 @@
 }
 
 .review-list-item {
-  width: 336px;
+  max-width: 336px;
   border-radius: 30px;
   padding: 32px 36px;
   background: var(--gray);
