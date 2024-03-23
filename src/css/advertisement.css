@@ -1,0 +1,137 @@
+.advertisement-container {
+  background-image: linear-gradient(
+      rgba(12, 12, 12, 0.8),
+      rgba(12, 12, 12, 0.8)
+    ),
+    url(../img/advertisement.img/mobile.jpg);
+  border-radius: 30px;
+  max-width: 335px;
+  height: 100%;
+  padding: 60px 28px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 779px) and (min-resolution: 192dpi) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/mobile@2x.jpg);
+  }
+}
+.container-advertisement-title {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.advertisement-text {
+  max-width: 279px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.text-part {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 48px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.advertisement-link:hover {
+  color: #0c0c0c;
+  background-color: #fbfbfb;
+}
+/* =========       mobile      ============= */
+
+/* =========        tablet.     =========== */
+
+@media screen and (min-width: 780px) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/tablet.jpg);
+    max-width: 704px;
+    height: 100%px;
+    padding: 80px 64px;
+  }
+}
+
+@media screen and (max-width: 1149px) and (min-resolution: 192dpi) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/tablet@2x.jpg);
+  }
+}
+
+.container-advertisement-title {
+  gap: 32px;
+}
+
+.advertisement-text {
+  max-width: 576px;
+  font-size: 48px;
+  line-height: 0.92;
+}
+
+/* ========     tablet      =========== */
+
+/* ========        desktop      ========= */
+@media screen and (min-width: 1150px) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/desktop.jpg);
+
+    height: 298px;
+    max-width: 1150px;
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1280px) and (min-resolution: 192dpi) {
+  .advertisement-container {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/advertisement.img/desktop@2x.jpg);
+  }
+}
+
+.container-advertisement-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.advertisement-text {
+  max-width: 690px;
+}
+
+/* =========      desktop      ======== */
