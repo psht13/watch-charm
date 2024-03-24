@@ -94,12 +94,12 @@ body {
 .current::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   left: 50%;
   border-radius: 100%;
   width: 8px;
   height: 8px;
-  background-color: var(--white-text);
+  background-color: transparent;
   transform: translateX(-50%);
-  transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out, padding-bottom 0.4s ease-in-out;
 }
