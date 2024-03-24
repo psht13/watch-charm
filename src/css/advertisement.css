@@ -122,6 +122,10 @@
       ),
       url(../img/advertisement.img/desktop@2x.jpg);
   }
+
+  .advertisement-link {
+    width: 160px;
+  }
 }
 
 .container-advertisement-title {
