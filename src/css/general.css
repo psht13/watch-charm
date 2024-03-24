@@ -42,6 +42,7 @@ body {
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
+  color: var(--h-text);
 }
 
 .section {
@@ -61,11 +62,9 @@ body {
     padding-bottom: 80px;
   }
   .title__block {
-    color: var(--h-text);
     font-weight: 600;
     font-size: 48px;
     line-height: 0.91667;
-    letter-spacing: -0.02em;
   }
 }
 
