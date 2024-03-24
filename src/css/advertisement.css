@@ -5,14 +5,13 @@
     ),
     url(../img/advertisement.img/mobile.jpg);
   border-radius: 30px;
-  max-width: 335px;
   height: 100%;
   padding: 60px 28px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media screen and (max-width: 779px) and (min-resolution: 192dpi) {
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .advertisement-container {
     background-image: linear-gradient(
         rgba(12, 12, 12, 0.8),
@@ -44,7 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 160px;
+  max-width: 160px;
   height: 48px;
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
@@ -64,7 +63,7 @@
 
 /* =========        tablet.     =========== */
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .advertisement-container {
     background-image: linear-gradient(
         rgba(12, 12, 12, 0.8),
@@ -72,35 +71,35 @@
       ),
       url(../img/advertisement.img/tablet.jpg);
     max-width: 704px;
-    height: 100%px;
+    height: 100%;
     padding: 80px 64px;
   }
-}
 
-@media screen and (max-width: 1149px) and (min-resolution: 192dpi) {
-  .advertisement-container {
-    background-image: linear-gradient(
-        rgba(12, 12, 12, 0.8),
-        rgba(12, 12, 12, 0.8)
-      ),
-      url(../img/advertisement.img/tablet@2x.jpg);
+  @media screen and (max-width: 1279px) and (min-resolution: 192dpi) {
+    .advertisement-container {
+      background-image: linear-gradient(
+          rgba(12, 12, 12, 0.8),
+          rgba(12, 12, 12, 0.8)
+        ),
+        url(../img/advertisement.img/tablet@2x.jpg);
+    }
   }
-}
 
-.container-advertisement-title {
-  gap: 32px;
-}
+  .container-advertisement-title {
+    gap: 32px;
+  }
 
-.advertisement-text {
-  max-width: 576px;
-  font-size: 48px;
-  line-height: 0.92;
+  .advertisement-text {
+    max-width: 576px;
+    font-size: 48px;
+    line-height: 0.92;
+  }
 }
 
 /* ========     tablet      =========== */
 
 /* ========        desktop      ========= */
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1280px) {
   .advertisement-container {
     background-image: linear-gradient(
         rgba(12, 12, 12, 0.8),
@@ -112,26 +111,26 @@
     max-width: 1150px;
     padding: 80px;
   }
-}
 
-@media screen and (max-width: 1280px) and (min-resolution: 192dpi) {
-  .advertisement-container {
-    background-image: linear-gradient(
-        rgba(12, 12, 12, 0.8),
-        rgba(12, 12, 12, 0.8)
-      ),
-      url(../img/advertisement.img/desktop@2x.jpg);
+  @media screen and (min-resolution: 192dpi) {
+    .advertisement-container {
+      background-image: linear-gradient(
+          rgba(12, 12, 12, 0.8),
+          rgba(12, 12, 12, 0.8)
+        ),
+        url(../img/advertisement.img/desktop@2x.jpg);
+    }
   }
-}
 
-.container-advertisement-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
+  .container-advertisement-title {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 
-.advertisement-text {
-  max-width: 690px;
+  .advertisement-text {
+    max-width: 690px;
+  }
 }
 
 /* =========      desktop      ======== */
