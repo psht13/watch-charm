@@ -43,7 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 160px;
+  width: 160px;
   height: 48px;
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
