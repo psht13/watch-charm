@@ -61,6 +61,8 @@ body {
     padding-bottom: 80px;
   }
   .title__block {
+    color: var(--h-text);
+    font-weight: 600;
     font-size: 48px;
     line-height: 0.91667;
     letter-spacing: -0.02em;
@@ -78,14 +80,6 @@ body {
   .section {
     padding-bottom: 100px;
   }
-}
-
-.title__block {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 0.91667;
-  letter-spacing: -0.02em;
-  color: var(--h-text);
 }
 
 .current {
