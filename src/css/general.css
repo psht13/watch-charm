@@ -39,6 +39,7 @@ body {
 }
 
 .title__block {
+  font-weight: 600;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -62,7 +63,6 @@ body {
     padding-bottom: 80px;
   }
   .title__block {
-    font-weight: 600;
     font-size: 48px;
     line-height: 0.91667;
   }
