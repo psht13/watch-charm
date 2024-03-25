@@ -165,18 +165,30 @@
 </div>
 
 <script>
-  var openButton = document.getElementById('menu-open-btn');
-  var element = document.getElementById('mobile-menu');
+  let openButton = document.getElementById('menu-open-btn');
+  let removeButton = document.getElementById('menu-exit-btn');
+  let element = document.getElementById('mobile-menu');
 
   openButton.addEventListener('click', function () {
     element.classList.add('is-open');
   });
 
-  var removeButton = document.getElementById('menu-exit-btn');
-
-  // Додаємо подію "click" на другу кнопку
   removeButton.addEventListener('click', function () {
-    // Видаляємо клас з елементу
     element.classList.remove('is-open');
   });
+
+  const anchors = document.querySelectorAll('a[href*="#"]');
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const blockID = anchor.getAttribute('href').substr(1);
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
 </script>
