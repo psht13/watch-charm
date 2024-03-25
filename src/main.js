@@ -1,4 +1,4 @@
-// import Swiper from 'swiper';
+//import Swiper from 'swiper';
 
 // sale
 var swiper = new Swiper('.mySwiper', {
