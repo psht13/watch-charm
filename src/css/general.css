@@ -10,6 +10,7 @@
   --gray: #f3f3f3; /*Колір сіро-білий для тексту*/
   --reviews: rgba(12, 12, 12, 0.4); /*для відгуків*/
   --border: rgba(251, 251, 251, 0.1); /*для рамок*/
+  --header-border: rgba(12, 12, 12, 0.1);
 }
 /* 
 Формат використання:
@@ -35,15 +36,18 @@ body {
   .container {
     min-width: 320px;
   }
-  .title__block {
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-  }
+}
+
+.title__block {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--h-text);
 }
 
 .section {
-  padding: 30px 0;
+  padding-bottom: 60px;
 }
 
 /* General tablet styles */
@@ -56,12 +60,11 @@ body {
   }
 
   .section {
-    padding: 40px 0;
+    padding-bottom: 80px;
   }
   .title__block {
     font-size: 48px;
     line-height: 0.91667;
-    letter-spacing: -0.02em;
   }
 }
 
@@ -74,14 +77,23 @@ body {
   }
 
   .section {
-    padding: 50px 0;
+    padding-bottom: 100px;
   }
 }
 
-.title__block {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 0.91667;
-  letter-spacing: -0.02em;
-  color: var(--h-text);
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  transform: translateX(-50%);
+  transition: background-color 0.4s ease-in-out, padding-bottom 0.4s ease-in-out;
 }

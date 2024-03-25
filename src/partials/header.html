@@ -1,1 +1,182 @@
-<header class="header"><div class="container"></div></header>
+<header class="header">
+  <div class="container">
+    <div class="header-container-wrapper">
+      <p class="header-logo">watchcharm</p>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item">
+            <div class="link-wrapper current">
+              <a href="#hero" class="header-nav-list-link">Home</a>
+            </div>
+          </li>
+          <li class="header-nav-list-item">
+            <div class="link-wrapper current">
+              <a href="#about-us" class="header-nav-list-link">About Us</a>
+            </div>
+          </li>
+          <li class="header-nav-list-item">
+            <div class="link-wrapper current">
+              <a href="#catalog" class="header-nav-list-link">Catalog</a>
+            </div>
+          </li>
+          <li class="header-nav-list-item">
+            <div class="link-wrapper current">
+              <a href="#sale" class="header-nav-list-link">Sale</a>
+            </div>
+          </li>
+          <li class="header-nav-list-item">
+            <div class="link-wrapper current">
+              <a href="#reviews" class="header-nav-list-link">Reviews</a>
+            </div>
+          </li>
+          <li class="header-nav-list-item">
+            <div class="link-wrapper current">
+              <a href="#contact-us" class="header-nav-list-link">
+                Contact Us
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-contacts-wrapper">
+        <ul class="header-contacts-list">
+          <li class="header-contacts-list-item">
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="header-contacts-list-link"
+              target="_blank"
+            >
+              <svg class="header-contacts-list-icon">
+                <use href="./img/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-contacts-list-item">
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="header-contacts-list-link"
+              target="_blank"
+            >
+              <svg class="header-contacts-list-icon">
+                <use href="./img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-contacts-list-item">
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="header-contacts-list-link"
+              target="_blank"
+            >
+              <svg class="header-contacts-list-icon">
+                <use href="./img/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button id="menu-open-btn" class="header-menu-button" type="button">
+        <svg class="header-menu-icon" aria-label="Menu icon">
+          <use href="./img/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu" class="mobile-menu-wrapper">
+  <div class="mobile-menu-flex">
+    <button id="menu-exit-btn" class="menu-exit-button" type="button">
+      <svg class="menu-exit-icon" aria-label="Exit button icon">
+        <use href="./img/icons.svg#icon-exit"></use>
+      </svg>
+    </button>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../main.js"></script>
+    <script></script>
+    <ul class="menu-nav-list">
+      <li class="menu-nav-list-item">
+        <div class="link-wrapper current">
+          <a href="#hero" class="menu-nav-list-link">Home</a>
+        </div>
+      </li>
+      <li class="menu-nav-list-item">
+        <div class="link-wrapper current">
+          <a href="#about-us" class="menu-nav-list-link">About Us</a>
+        </div>
+      </li>
+      <li class="menu-nav-list-item">
+        <div class="link-wrapper current">
+          <a href="#catalog" class="menu-nav-list-link">Catalog</a>
+        </div>
+      </li>
+      <li class="menu-nav-list-item">
+        <div class="link-wrapper current">
+          <a href="#sale" class="menu-nav-list-link">Sale</a>
+        </div>
+      </li>
+      <li class="menu-nav-list-item">
+        <div class="link-wrapper current">
+          <a href="#reviews" class="menu-nav-list-link">Reviews</a>
+        </div>
+      </li>
+      <li class="menu-nav-list-item">
+        <div class="link-wrapper current">
+          <a href="#contact-us" class="menu-nav-list-link">Contact Us</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="menu-contacts-list">
+      <li class="menu-contacts-list-item">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          class="menu-contacts-list-link"
+          target="_blank"
+        >
+          <svg class="menu-contacts-list-icon">
+            <use href="./img/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="menu-contacts-list-item">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          class="menu-contacts-list-link"
+          target="_blank"
+        >
+          <svg class="menu-contacts-list-icon">
+            <use href="./img/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="menu-contacts-list-item">
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          class="menu-contacts-list-link"
+          target="_blank"
+        >
+          <svg class="menu-contacts-list-icon">
+            <use href="./img/icons.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  var openButton = document.getElementById('menu-open-btn');
+  var element = document.getElementById('mobile-menu');
+
+  openButton.addEventListener('click', function () {
+    element.classList.add('is-open');
+  });
+
+  var removeButton = document.getElementById('menu-exit-btn');
+
+  // Додаємо подію "click" на другу кнопку
+  removeButton.addEventListener('click', function () {
+    // Видаляємо клас з елементу
+    element.classList.remove('is-open');
+  });
+</script>

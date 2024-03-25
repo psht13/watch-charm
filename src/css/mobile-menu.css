@@ -73,13 +73,27 @@
   }
 
   .menu-nav-list-link {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28571;
     text-align: center;
     opacity: 0.8;
-    transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out, padding-bottom 0.4s ease-in-out;
     color: var(--white-text);
+  }
+
+  .current::after {
+    bottom: -10px;
+  }
+  .current:hover::after,
+  .current:focus::after {
+    background-color: var(--interactive);
+  }
+
+  .current:hover .menu-nav-list-link,
+  .current:focus .menu-nav-list-link {
+    padding-bottom: 10px;
   }
 
   .menu-nav-list-link:hover,
@@ -105,6 +119,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    line-height: 0;
   }
 
   .menu-contacts-list-icon {

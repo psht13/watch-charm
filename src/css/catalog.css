@@ -13,7 +13,7 @@
   justify-content: space-between;
 }
 .section-list-item {
-  width: 335px;
+  max-width: 100%;
   border-radius: 30px;
   background: #f3f3f3;
 }
@@ -72,6 +72,10 @@
   .section-list {
     row-gap: 20px;
   }
+
+  .section-list-item {
+    max-width: calc((100% - 20px) / 2);
+  }
   .section-title-text {
     width: 280px;
   }
@@ -91,7 +95,7 @@
     row-gap: 32px;
   }
   .section-list-item {
-    width: 368px;
+    max-width: calc((100% - 64px) / 3);
   }
   .section-title-text {
     width: 304px;

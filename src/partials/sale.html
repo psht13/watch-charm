@@ -1,44 +1,104 @@
 <section class="section sale" id="sale">
   <div class="sale_wrapper">
     <div class="container">
-      <div class="title__block sale__title">Sale</div>
+      <h2 class="title__block sale__title">Sale</h2>
       <div class="sale__flex">
         <div class="sale__slider">
           <div class="swiper mySwiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="../img/sale-main.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale-main.png, ./img/sale-main@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale-main.png" alt="Sale Main Image" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="../img/sale1.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale1.png, ./img/sale1@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale1.png" alt="Sale Main Image" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="../img/sale2.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale2.png, ./img/sale2@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale2.png" alt="Sale Main Image" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="../img/sale3.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale3.png, ./img/sale3@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale3.png" alt="Sale Main Image" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="../img/sale4.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale4.png, ./img/sale4@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale4.png" alt="Sale Main Image" />
+                </picture>
               </div>
             </div>
           </div>
           <div thumbsSlider="" class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="../img/sale-main.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale-main.png, ./img/sale-main@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale-main.png" alt="Sale Main Image" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="../img/sale1.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale1.png, ./img/sale1@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale1.png" alt="Sale Main Image" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="../img/sale2.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale2.png, ./img/sale2@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale2.png" alt="Sale Main Image" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="../img/sale3.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale3.png, ./img/sale3@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale3.png" alt="Sale Main Image" />
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img src="../img/sale4.png" />
+                <picture>
+                  <source
+                    srcset="./img/sale4.png, ./img/sale4@2x.png 2x"
+                    type="image/png"
+                  />
+                  <img src="./img/sale4.png" alt="Sale Main Image" />
+                </picture>
               </div>
             </div>
           </div>
@@ -52,14 +112,14 @@
             <div class="sale__price-new">€1500</div>
             <div class="sale__price-old">€3000</div>
           </div>
-          <div class="sale__info-about">
+          <p class="sale__info-about">
             The Garmin MARQ Commander Gen 2 Carbon Edition is a modern
             smartwatch for adventurers that takes materials and features to the
             next level. The body of the watch is made of very durable Fused
             Carbon Fiber material and has a precise AMOLED touch screen. The
             sensitive touch screen is complemented by buttons that can be used
             in any conditions.
-          </div>
+          </p>
           <ul class="sale__info-flex">
             <li class="sale__info-tag">
               <a href="#"> Fused carbon fiber </a>
@@ -85,3 +145,37 @@
     </div>
   </div>
 </section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // sale
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+    grabCursor: true,
+    mousewheel: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        direction: 'horizontal',
+        spaceBetween: 5,
+        slidesPerView: 4,
+      },
+
+      // when window width is >= 768px
+      768: {
+        direction: 'vertical',
+        spaceBetween: 10,
+        slidesPerView: 4,
+      },
+    },
+  });
+  var swiper2 = new Swiper('.mySwiper2', {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+</script>
