@@ -57,11 +57,17 @@
   height: 48px;
   border-radius: 16px;
   border: none;
-  background: #3350e9;
+  background-color: #3350e9;
   display: block;
   margin-right: auto;
   margin-left: auto;
   margin-top: 40px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.open-btn:hover,
+.open-btn:focus {
+  background-color: var(--interactive-hover);
 }
 @media screen and (min-width: 768px) {
   .section-text-catalog {
