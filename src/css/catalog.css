@@ -47,6 +47,22 @@
 .section-now {
   display: none;
 }
+.open-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  color: #fbfbfb;
+  min-width: 160px;
+  height: 48px;
+  border-radius: 16px;
+  border: none;
+  background: #3350e9;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
 @media screen and (min-width: 768px) {
   .section-text-catalog {
     font-size: 48px;
@@ -65,6 +81,9 @@
   }
   .section-now {
     display: flex;
+  }
+  .open-btn {
+    display: none;
   }
 }
 @media screen and (min-width: 1280px) {
