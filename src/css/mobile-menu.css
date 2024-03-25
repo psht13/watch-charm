@@ -18,7 +18,7 @@
     background-size: cover;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out, visibility 400ms ease-in-out;
   }
 
   @media screen and (min-resolution: 192dpi) and (max-width: 767px) {
