@@ -1,6 +1,11 @@
 <section id="hero" class="section">
   <div class="container container-hero">
-    <div class="hero-content">
+    <div
+      class="hero-content"
+      data-aos="zoom-in"
+      data-aos-once="false"
+      data-aos-duration="1000"
+    >
       <div class="hero-title-description">
         <h1 class="hero-title">
           Welcome to our
@@ -102,33 +107,35 @@
         <a href="#about-us" class="scroll-down">Scroll down</a>
       </div>
     </div>
-    <picture>
-      <source
-        srcset="
-          ./img/hero_img/wristwatch_desktop.jpg    1x,
-          ./img/hero_img/wristwatch_desktop@2x.jpg 2x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ./img/hero_img/wristwatch_tablet.jpg    1x,
-          ./img/hero_img/wristwatch_tablet@2x.jpg 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./img/hero_img/wristwatch_mobile.jpg    1x,
-          ./img/hero_img/wristwatch_mobile@2x.jpg 2x
-        "
-        media="(min-width: 320px) and (max-width: 767px)"
-      />
-      <img
-        class="hero-image"
-        src="./img/hero_img/wristwatch_mobile.jpg"
-        alt="Premium wrist watch"
-      />
-    </picture>
+    <div class="main-hero-image" data-aos="zoom-in" data-aos-duration="1000">
+      <picture>
+        <source
+          srcset="
+            ./img/hero_img/wristwatch_desktop.jpg    1x,
+            ./img/hero_img/wristwatch_desktop@2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/hero_img/wristwatch_tablet.jpg    1x,
+            ./img/hero_img/wristwatch_tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/hero_img/wristwatch_mobile.jpg    1x,
+            ./img/hero_img/wristwatch_mobile@2x.jpg 2x
+          "
+          media="(min-width: 320px) and (max-width: 767px)"
+        />
+        <img
+          class="hero-image"
+          src="./img/hero_img/wristwatch_mobile.jpg"
+          alt="Premium wrist watch"
+        />
+      </picture>
+    </div>
   </div>
 </section>
