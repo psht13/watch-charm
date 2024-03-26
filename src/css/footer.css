@@ -175,7 +175,7 @@
     max-width: 180px;
   }
   .title-footer {
-    width: 533px;
+    max-width: 523px;
     margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
