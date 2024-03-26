@@ -10,7 +10,7 @@ openButton.addEventListener('click', function () {
 removeButton.addEventListener('click', function () {
   element.classList.remove('is-open');
 });
-
+AOS.init();
 // sale
 var swiper = new Swiper('.mySwiper', {
   spaceBetween: 10,
