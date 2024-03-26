@@ -55,7 +55,8 @@
   transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
-.advertisement-link:hover {
+.advertisement-link:hover,
+.advertisement-link:focus {
   color: #0c0c0c;
   background-color: #fbfbfb;
 }
