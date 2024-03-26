@@ -54,9 +54,12 @@ for (let anchor of anchors) {
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start',
+      duration: 3000,
     });
   });
 }
+// $('#second').inputmask('+380 99-999-9999');
+
 ///load more
 
 let loadMoreBtn = document.querySelector('#js-load-more');
