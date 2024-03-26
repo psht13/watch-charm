@@ -215,6 +215,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .sale__info-flex {
+    padding: 0;
+  }
   .sale__slider {
     flex-direction: column-reverse;
     width: 100%;

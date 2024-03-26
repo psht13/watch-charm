@@ -1,9 +1,19 @@
 <section class="section sale" id="sale">
   <div class="sale_wrapper">
     <div class="container">
-      <h2 class="title__block sale__title">Sale</h2>
+      <h2
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        class="title__block sale__title"
+      >
+        Sale
+      </h2>
       <div class="sale__flex">
-        <div class="sale__slider">
+        <div
+          class="sale__slider"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div class="swiper mySwiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -103,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="sale__info">
+        <div class="sale__info" data-aos="fade-left" data-aos-duration="1000">
           <div class="sale__info-title">
             MARQ® Commander (Gen 2) - Carbon Edition
           </div>
@@ -145,3 +155,37 @@
     </div>
   </div>
 </section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // sale
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+    grabCursor: true,
+    mousewheel: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        direction: 'horizontal',
+        spaceBetween: 5,
+        slidesPerView: 4,
+      },
+
+      // when window width is >= 768px
+      768: {
+        direction: 'vertical',
+        spaceBetween: 10,
+        slidesPerView: 4,
+      },
+    },
+  });
+  var swiper2 = new Swiper('.mySwiper2', {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+</script>

@@ -33,12 +33,18 @@
   line-height: 0;
   border: none;
   background-color: transparent;
+  stroke: var(--h-text);
+  transition: stroke 0.4s ease-in-out;
+}
+
+.header-menu-button:hover,
+.header-menu-button:focus {
+  stroke: var(--interactive);
 }
 
 .header-menu-icon {
   width: 34px;
   height: 34px;
-  stroke: var(--h-text);
 }
 
 /* tablet header styles */
@@ -54,6 +60,12 @@
   .header-menu-icon {
     width: 40px;
     height: 40px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    .tablet-container {
+      max-width: 1279px;
+    }
   }
 }
 
@@ -77,9 +89,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
+    display: block;
+    padding-bottom: 10px;
   }
 
-  .header-nav-list-link:hover .current::after {
+  .current:hover::after,
+  .current:focus::after {
     background-color: var(--interactive);
   }
 
@@ -112,7 +127,8 @@
     transition: fill 0.4s ease-in-out;
   }
 
-  .header-contacts-list-link:hover .header-contacts-list-icon {
+  .header-contacts-list-link:hover .header-contacts-list-icon,
+  .header-contacts-list-link:focus .header-contacts-list-icon {
     fill: var(--interactive);
   }
   .header-menu-button {
