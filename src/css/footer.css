@@ -185,7 +185,7 @@
   }
   .links-footer-list {
     row-gap: 0;
-    column-gap: 19;
+    column-gap: 19px;
     flex-wrap: nowrap;
     max-width: 400px;
   }
