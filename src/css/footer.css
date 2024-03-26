@@ -62,8 +62,7 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
-
-  width: 280px;
+  max-width: 280px;
 }
 
 .title-wrapper {

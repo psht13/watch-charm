@@ -1,13 +1,13 @@
 /* mobile header styles */
 .header {
   border-bottom: 1px solid var(--header-border);
+  padding: 20px 0;
 }
 
 .header-container-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 
 .header-logo {
@@ -49,7 +49,7 @@
 
 /* tablet header styles */
 @media screen and (min-width: 768px) {
-  .header-container-wrapper {
+  .header {
     padding: 26px 0;
   }
 
