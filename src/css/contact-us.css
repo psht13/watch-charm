@@ -85,9 +85,18 @@
   background-color: #1f3cd4;
 }
 
+.contact-us-image {
+  border-radius: 30px;
+}
+
 @media only screen and (min-width: 768px) {
   .contact-us-section {
     padding-bottom: 80px;
+  }
+  .contact-form {
+    border-radius: 50px;
+    padding: 50px 122px;
+    margin-bottom: 40px;
   }
 
   .contact-form {
@@ -128,6 +137,16 @@
     padding: 17px 63px;
     min-width: 160px;
     height: 52px;
+  }
+
+  .contact-form-btn {
+    padding: 17px 63px;
+    min-width: 160px;
+    height: 52px;
+  }
+
+  .contact-us-image {
+    border-radius: 50px;
   }
 }
 
