@@ -21,6 +21,7 @@ body {
   font-family: 'Gilroy', sans-serif;
   color: var(--p-text);
   background-color: var(--white-text);
+  overflow-x: hidden;
 }
 
 /* General mobile styles */
@@ -30,7 +31,6 @@ body {
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 375px) {
