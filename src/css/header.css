@@ -97,7 +97,9 @@
   .current:focus::after {
     background-color: var(--interactive);
   }
-
+  .active.current::after {
+    background-color: var(--interactive);
+  }
   .header-contacts-list {
     display: flex;
     gap: 10px;
