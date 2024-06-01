@@ -1,5 +1,5 @@
 {
-  "name": "vanilla-app-template",
+  "name": "watch-charm",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,7 @@
     "glob": "^8.1.0",
     "vite": "^4.5.2"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "FrontLine",
   "license": "ISC",
   "dependencies": {
     "swiper": "^11.0.7",
